@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+}
+
+/* CALCULATOR BOX */
+.box {
+    width: 30vw;
+    height: 65vh;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    box-shadow: 0.2em 0.2em 1em black;
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.d-box {
+    width: 13.2vw;
+    height: 10vh;
+    /* border: 2px solid black; */
+    padding-left: 3px;
+    margin-top: 20px;
+}
+
+.d-box h3 {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.value {
+    height: 5vh;
+    width: 12vw;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: larger;
+    padding-left: 10px;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+.value:focus {
+    border-bottom: 2.4px solid black;
+    outline: none;
+    transform: scale(1.03);
+}
+
+#yr-mon {
+    position: relative;
+    top: 37%;
+    width: 10vw;
+    height: 6vh;
+    border: 2px solid black;
+    border-radius: 0.3em;
+    font-size: larger;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+#yr-mon:focus {
+    transform: scale(1.02);
+}
+
+.cal-but {
+    width: 10vw;
+    height: 5.5vh;
+    font-size: larger;
+    background-color: rgb(148, 60, 230);
+    font-weight: 600;
+    border: 0.1em solid black;
+    border-radius: 0.3em;
+    display: block;
+}
+
+.result {
+    width: 28vw;
+    height: 18vh;
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: black;
+    background-color: rgb(148, 60, 230);
+    opacity: 90%;
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.result p {
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.ans {
+    font-weight: 600;
+    color: black;
+    opacity: 100%;
+}
+
+
+/* IPAD RESPONSIVENESS */
+@media screen and (max-width:1200px) {
+    body {
+        background-color: blueviolet;
+        /* padding: 1em; */
+    }
+
+    .box {
+        width: 90vw;
+        height: 90vh;
+        margin-top: 4em;
+        padding: 1em;
+        font-size: 2rem;
+    }
+
+    .d-box {
+        width: 80vw;
+        height: 12vh;
+        font-size: 2rem;
+        /* border: 2px solid red; */
+    }
+
+    .d-box h3 {
+        font-size: 2.5rem;
+    }
+
+    .value {
+        width: 75vw;
+    }
+
+    #yr-mon {
+        width: 80vw;
+        position: relative;
+        top: 1%;
+    }
+
+    .cal-but {
+        width: 80vw;
+        font-weight: bolder;
+        height: 7vh;
+        position: relative;
+        top: -3%;
+    }
+
+    .result {
+        width: 75vw;
+        border-radius: 0.3em;
+        height: 25vh;
+        margin-top: 1em;
+        position: relative;
+        top: -3%;
+        display: block;
+        padding-left: 3em;
+        padding-top: 1em;
+    }
+
+    .result p {
+        font-weight: 600;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 2.5rem;
+    }
+
+}
+
+/* 
+MOBILE PHONE RESPONSIVENESS */
+@media screen and (max-width:600px) {
+    body {
+        background-color: blueviolet;
+        padding: 1em;
+
+    }
+
+    .box {
+        width: 75vw;
+        height: 90vh;
+        margin-top: 3em;
+        display: block;
+        padding: 1em;
+        font-size: 1rem;
+    }
+
+    .d-box {
+        width: 75vw;
+        height: 12vh;
+        font-size: 1.5rem;
+        /* border: 2px solid red; */
+    }
+
+    .d-box h3 {
+        font-size: 1rem;
+    }
+
+
+    .value {
+        width: 65vw;
+    }
+
+    #yr-mon {
+        width: 75vw;
+        position: relative;
+        top: -1%;
+        font-size: 1rem;
+    }
+
+    .cal-but {
+        width: 75vw;
+        font-weight: bold;
+        height: 7vh;
+        position: relative;
+        top: -4%;
+    }
+
+    .result {
+        width: 62vw;
+        border-radius: 0.3em;
+        height: 22vh;
+        margin-top: 1em;
+        position: relative;
+        top: -4%;
+        font-size: 1rem;
+
+    }
+
+    .result p {
+        font-weight: 600;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.4em;
+    }
+}
+
+/*ROTATE MODE*/
+@media screen {}

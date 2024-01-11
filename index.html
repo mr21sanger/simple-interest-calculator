@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div id="p-box" class="d-box">
+                <h3>Principle($):</h3>
+                <input type="number" name="principle" value="1000"id="principle" class="value" placeholder="$1000">
+            </div>
+
+            <div id="r-box" class="d-box">
+                <h3>Rate:</h3>
+                <input type="number" name="rate" value="1"id="rate" class="value" placeholder="5%" >
+            </div>
+
+            <div id="t-box" class="d-box">
+                <h3>Time:</h3>
+                <input type="number" name="time" value="1" id="time" class="value" placeholder="5"> 
+            </div>
+
+            <div class="d-box" id="time">
+                <select name="time" id="yr-mon">
+                    <option value="1">YEARS</option>
+                    <option value="2">MONTHS</option>
+                </select>
+            </div>
+
+            <button id="calc" class="cal-but">Calculate</button>
+
+        </div>
+    </div>
+    <script src="script.js"> 
+ </script>
+</body>
+
+</html>
